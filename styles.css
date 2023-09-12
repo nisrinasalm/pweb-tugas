@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+}
+
+#home {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: block;
+    text-align: center;
+    width: 50%;
+}
+
+.like {
+    width: 20%;
+}
+
+.soc {
+    width: 3%;
+    padding: 10px;
+}
+
+hr {
+    border: dotted 4px;
+    border-bottom: none;
+    width: 4%;
+    margin: 50px auto;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
