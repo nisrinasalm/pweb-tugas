@@ -3,6 +3,32 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to top, #8a817c, #ccc5b9);
+    color: #F4F3EE;
+}
+
+h2 {
+    color: #f5cb5c;
+    border: 2px solid #f5cb5c;
+    padding: 10px 50px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+h3 {
+    color: #463F3A;
+}
+
+hr {
+    border: dotted 4px;
+    border-bottom: none;
+    width: 4%;
+    margin: 50px auto;
+    color: #f5cb5c;
+}
+
+footer {
+    color: #f5cb5c;
 }
 
 table {
@@ -17,9 +43,22 @@ td, th {
     padding: 10px;
 }
 
+th, .time {
+    color: #463F3A;
+    font-weight: bold;
+}
+
 #home {
     text-align: center;
-    padding-top: 50px;
+    padding: 15%;
+}
+
+#about-me {
+    padding: 5%
+}
+
+#contact {
+    padding: 5%;
 }
 
 .container {
@@ -42,14 +81,26 @@ td, th {
     padding: 10px;
 }
 
-hr {
-    border: dotted 4px;
-    border-bottom: none;
-    width: 4%;
-    margin: 50px auto;
-}
-
 .list {
     display: flex;
     justify-content: center;
+}
+
+.nav {
+    overflow: hidden;
+}
+
+.link {
+    margin-right: 15px;
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: #f5cb5c;
+    color: white;
 }
