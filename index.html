@@ -1,148 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nisrina Salma Robbani</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
-    <nav style="padding-top: 10px;">
-        <a href="#">Home</a>
-        <a href="#about-me">About Me</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    <main>
-        <section id="home">
-            <h1>Hi! Welcome to Nisrina Salma Robbani's page.</h1>
-            <p>This is a page where you can see my personal information.</p>
-        </section>
-        <section id="about-me">
-            <div>
-                <hr>
-                <h2>About Me</h2>
-                <p>I'm <strong>Salma</strong> and I'm passionate about learning new things. <br>
-                Feel free to explore and discover more about me. Thank you for visiting!</p>
-            </div>
-            <br>
-            <div>
-                <h3>Education</h3>
-                <div class="list">
-                    <ol style="text-align: justify;">
-                        <li>Institut Teknologi Sepuluh Nopember (2022 - now)
-                            <p>Bachelor of Informatics</p>
-                        </li>
-                        <li>SMA Negeri 2 Depok (2019 - 2022)
-                            <p>MIPA</p>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <h3>Favorite</h3>
-            <p>Here's several things I like.</p>
-            <div class="container">
-                <div class="box">
-                    <p style="font-weight: bold;">music</p>
-                    <audio controls>
-                        <source src="src/august.mp3" type="audio/mpeg">
-                    <audio>
-                </div>
-                <div class="box">
-                    <p style="font-weight: bold;">food</p>
-                    <img class="like" src="/src/ayam.jpg" alt="ayam">
-                </div>
-            </div>
-            <div class="container">
-                <div class="box">
-                    <p style="font-weight: bold;">pet</p>
-                    <img class="like" src="/src/cat.jpg" alt="kucing">
-                </div>
-                <div class="box">
-                    <p style="font-weight: bold;">youtube</p>
-                    <iframe src="https://www.youtube.com/embed/Wfx-IaxPy9Q"></iframe>
-                </div>
-            </div>
-            <br>
-            <div>
-                <h3>Schedule</h3>
-                <p>Below is my schedule for the 3rd term.</p>
-                <table>
-                    <tr>
-                        <th>Waktu</th>
-                        <th>Senin</th>
-                        <th>Selasa</th>
-                        <th>Rabu</th>
-                        <th>Kamis</th>
-                    </tr>
-                    <tr>
-                        <td>07.00 - 08.50</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>Matematika Diskrit</td>
-                    </tr>
-                    <tr>
-                        <td>10.00 - 11.50</td>
-                        <td>Konsep Kecerdasan Artifisial</td>
-                        <td>Konsep Pengembangan Perangkat Lunak</td>
-                        <td>Sistem Basis Data</td>
-                        <td>Aljabar Linier</td>
-                    </tr>
-                    <tr>
-                        <td>13.30 - 15.20</td>
-                        <td></td>
-                        <td>Pemrograman Berorientasi Objek</td>
-                        <td>Pemrograman Web</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>15.30 - 17.20</td>
-                        <td>Teori Graf</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-            <hr>
-        </section>
-        <section id="contact">
-            <div>
-                <h2>Contact</h2>
-                <p>If you have any questions, feel free to contact me through</p>
-                <form>
-                    <label>Name</label><br>
-                    <input type="text" required><br><br>
-                    <label>Email</label><br>
-                    <input type="email" required><br><br>
-                    <label>Message</label><br>
-                    <textarea rows="4" required></textarea><br><br>
-                    <input type="submit" value="Submit">
-                </form> 
-            </div>
-            <br>
-            <p>or you can reach me out by</p>
-            <div class="sosmed">
-                <a href="https://github.com/nisrinasalm" target="_blank">
-                    <img class="soc" src="/src/github.png" alt="github">
-                </a>
-                <a href="https://linkedin.com/in/nisrinasalm" target="_blank">
-                    <img class="soc" src="/src/linkedin.png" alt="linkedin">
-                </a>
-                <a href="mailto:nisrinasalma19@gmail.com" target="_blank">
-                    <img class="soc" src="/src/mail.png" alt="gmail">
-                </a>
-                <a href="https://instagram.com/nisrinasalm" target="_blank">
-                    <img class="soc" src="/src/instagram.png" alt="instagram">
-                </a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 | Nisrina Salma Robbani</p>
-    </footer>
+<body class="overflow-x-hidden">
+  <section class="grid px-5" style="background-color: #4E77D8; color: white;">
+    <div class="row align-items-center pt-3 pb-1">
+      <div class="col text-start d-flex gap-2">
+        <ion-icon class="mt-1" name="location-outline"></ion-icon>
+        <p>Moonshine St. 14/05 Light City</p>
+      </div>
+      <div class="col text-end d-flex justify-content-end align-items-center gap-5">
+        <div class="d-flex gap-2">
+          <ion-icon class="mt-1" name="call-outline"></ion-icon>
+          <p>00 (123) 456 78 90</p>
+        </div>
+        <div class="d-flex gap-2">
+          <ion-icon class="mt-1" name="send-outline"></ion-icon>
+          <p>sandbox@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav class="navbar navbar-expand-lg mt-2">
+    <div class="container-fluid px-5">
+      <div class="navbar-left">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <h3>
+            Sandbox
+          </h3>
+        </a>
+      </div>
+      <div class="navbar-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                Demos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                Blocks
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                Features
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                Elements
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              EN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">ENG</a></li>
+              <li><a class="dropdown-item" href="#">IND</a></li>            </ul>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn rounded-pill" style="background-color: #4E77D8; color: white;">Contact</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <section class="row d-flex justify-content-center align-items-center py-5">
+    <div class="col p-5">
+      <div class="pt-5 px-5">
+        <h2>We bring solutions to make life easier for our customers.</h2>
+        <p>We have considered our solutions to support every stage of your growth.</p>
+      </div>
+      <div class="col gx-5 pb-5 px-5">
+        <button type="button" class="btn btn-lg rounded-pill" style="background-color: #4E77D8; color: white;">Explore Now</button>
+        <button type="button" class="btn btn-lg rounded-pill mx-3" style="border-color: #4E77D8; color: #4E77D8;">Free Trial</button>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+      <img src="https://source.unsplash.com/random/300×300" class="" width="500" height="500" alt="image">
+    </div>
+  </section>
+
+  <section class="container text-center py-5">
+    <div class="row gap-4">
+      <div class="col">
+        <h2>SLDWAVE</h2>
+      </div>
+      <div class="col">
+        <h2>expsake</h2>
+      </div>
+      <div class="col">
+        <h2>Skybox</h2>
+      </div>
+      <div class="col">
+        <h2>Braillie</h2>
+      </div>
+      <div class="col">
+        <h2>Malory</h2>
+      </div>
+      <div class="col">
+        <h2>crea;tink</h2>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
