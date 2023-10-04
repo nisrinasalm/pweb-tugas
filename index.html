@@ -1,148 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nisrina Salma Robbani</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        .calculator {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .buttons button {
+            font-size: 18px;
+            margin: 5px;
+        }
+
+        #output {
+            max-width: 200px;
+            height: 30px;
+            font-size: 24px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <nav style="padding-top: 10px;">
-        <a href="#">Home</a>
-        <a href="#about-me">About Me</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    <main>
-        <section id="home">
-            <h1>Hi! Welcome to Nisrina Salma Robbani's page.</h1>
-            <p>This is a page where you can see my personal information.</p>
-        </section>
-        <section id="about-me">
-            <div>
-                <hr>
-                <h2>About Me</h2>
-                <p>I'm <strong>Salma</strong> and I'm passionate about learning new things. <br>
-                Feel free to explore and discover more about me. Thank you for visiting!</p>
-            </div>
+    <div class="calculator">
+        <h2>Kalkulator Sederhana</h2>
+        <div id="output"></div><br>
+        <div class="buttons">
+            <button onclick="appendToOutput('7')">7</button>
+            <button onclick="appendToOutput('8')">8</button>
+            <button onclick="appendToOutput('9')">9</button>
+            <button onclick="appendToOutput('+')">+</button>
             <br>
-            <div>
-                <h3>Education</h3>
-                <div class="list">
-                    <ol style="text-align: justify;">
-                        <li>Institut Teknologi Sepuluh Nopember (2022 - now)
-                            <p>Bachelor of Informatics</p>
-                        </li>
-                        <li>SMA Negeri 2 Depok (2019 - 2022)
-                            <p>MIPA</p>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <h3>Favorite</h3>
-            <p>Here's several things I like.</p>
-            <div class="container">
-                <div class="box">
-                    <p style="font-weight: bold;">music</p>
-                    <audio controls>
-                        <source src="src/august.mp3" type="audio/mpeg">
-                    <audio>
-                </div>
-                <div class="box">
-                    <p style="font-weight: bold;">food</p>
-                    <img class="like" src="/src/ayam.jpg" alt="ayam">
-                </div>
-            </div>
-            <div class="container">
-                <div class="box">
-                    <p style="font-weight: bold;">pet</p>
-                    <img class="like" src="/src/cat.jpg" alt="kucing">
-                </div>
-                <div class="box">
-                    <p style="font-weight: bold;">youtube</p>
-                    <iframe src="https://www.youtube.com/embed/Wfx-IaxPy9Q"></iframe>
-                </div>
-            </div>
+            <button onclick="appendToOutput('4')">4</button>
+            <button onclick="appendToOutput('5')">5</button>
+            <button onclick="appendToOutput('6')">6</button>
+            <button onclick="appendToOutput('-')">-</button>
             <br>
-            <div>
-                <h3>Schedule</h3>
-                <p>Below is my schedule for the 3rd term.</p>
-                <table>
-                    <tr>
-                        <th>Waktu</th>
-                        <th>Senin</th>
-                        <th>Selasa</th>
-                        <th>Rabu</th>
-                        <th>Kamis</th>
-                    </tr>
-                    <tr>
-                        <td>07.00 - 08.50</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>Matematika Diskrit</td>
-                    </tr>
-                    <tr>
-                        <td>10.00 - 11.50</td>
-                        <td>Konsep Kecerdasan Artifisial</td>
-                        <td>Konsep Pengembangan Perangkat Lunak</td>
-                        <td>Sistem Basis Data</td>
-                        <td>Aljabar Linier</td>
-                    </tr>
-                    <tr>
-                        <td>13.30 - 15.20</td>
-                        <td></td>
-                        <td>Pemrograman Berorientasi Objek</td>
-                        <td>Pemrograman Web</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>15.30 - 17.20</td>
-                        <td>Teori Graf</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-            <hr>
-        </section>
-        <section id="contact">
-            <div>
-                <h2>Contact</h2>
-                <p>If you have any questions, feel free to contact me through</p>
-                <form>
-                    <label>Name</label><br>
-                    <input type="text" required><br><br>
-                    <label>Email</label><br>
-                    <input type="email" required><br><br>
-                    <label>Message</label><br>
-                    <textarea rows="4" required></textarea><br><br>
-                    <input type="submit" value="Submit">
-                </form> 
-            </div>
+            <button onclick="appendToOutput('1')">1</button>
+            <button onclick="appendToOutput('2')">2</button>
+            <button onclick="appendToOutput('3')">3</button>
+            <button onclick="appendToOutput('*')">*</button>
             <br>
-            <p>or you can reach me out by</p>
-            <div class="sosmed">
-                <a href="https://github.com/nisrinasalm" target="_blank">
-                    <img class="soc" src="/src/github.png" alt="github">
-                </a>
-                <a href="https://linkedin.com/in/nisrinasalm" target="_blank">
-                    <img class="soc" src="/src/linkedin.png" alt="linkedin">
-                </a>
-                <a href="mailto:nisrinasalma19@gmail.com" target="_blank">
-                    <img class="soc" src="/src/mail.png" alt="gmail">
-                </a>
-                <a href="https://instagram.com/nisrinasalm" target="_blank">
-                    <img class="soc" src="/src/instagram.png" alt="instagram">
-                </a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 | Nisrina Salma Robbani</p>
-    </footer>
+            <button onclick="appendToOutput('0')">0</button>
+            <button onclick="clearOutput()">C</button>
+            <button onclick="result()">=</button>
+            <button onclick="appendToOutput('/')">/</button>
+        </div>
+    </div>
+
+    <script>
+        function appendToOutput(value) {
+            document.getElementById('output').innerText += value;
+        }
+
+        function clearOutput() {
+            document.getElementById('output').innerText = '';
+        }
+
+        function result() {
+            var hasil = eval(document.getElementById('output').innerText);
+                document.getElementById('output').innerText = hasil;
+        }
+    </script>
 </body>
+
 </html>
